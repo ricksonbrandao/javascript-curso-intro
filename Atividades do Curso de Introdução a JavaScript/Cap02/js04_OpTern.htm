@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js04_OpTern.htm</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h3>Prática de Uso do Operador Ternário</h3>
+
+    <script language="JavaScript">
+        /*  Objetivo: 
+                Exemplos práticos de aplicações com Operador Ternário ?:, Operadores Relacionais e Expressões
+                Aritiméticas.
+                Utilização de Sintaxe: (<condição>) ? <expressão para resultado verdadeiro> : <expressão para resultado falso>
+        */
+        /* Definição de Variáveis */
+        document.write('<p>---------------------------...');
+        document.write('<p>DEFINIÇÃO E ATRIBUIÇÃO DE VARIÁVEIS: ');
+        document.write('<p>var js_num = <b>30</b>; (js_num recebe valor 30)');
+        
+        var js_num = 30;
+
+        /* Aplicação do Operador Ternário utilizando Operadores Relacionais */
+        document.write('<p>---------------------------...');
+        document.write('<p>OPERADOR TERNÁRIO <b>(? :)</b> com OPERADORES RELACIONAIS (==, !=, <):');
+        
+        document.write('<p>js_num <b>==</b> 20 <b>?</b> "SIM" <b>:</b> "NÃO" - Resposta => ');
+            ((js_num == 20) ? document.write('<b>SIM</b>') : document.write('<b>NÃO</b>'));
+
+        document.write('<p>js_num <b>!=</b> 20 <b>?</b> "SIM" <b>:</b> "NÃO" - Resposta => ');
+            ((js_num != 20) ? document.write('<b>SIM</b>') : document.write('<b>NÃO</b>'));
+
+        document.write('<p>js_num <b><</b> 50 <b>?</b> "SIM" <b>:</b> "NÃO" - Resposta => ');
+            ((js_num < 50) ? document.write('<b>SIM</b>') : document.write('<b>NÃO</b>'));
+
+        /* Aplicação de operador Ternário utilizando Expressão Aritmética e Operador Relacional */
+        document.write('<p>---------------------------...');
+        document.write('<p>OPERADOR TERNÁRIO com EXPRESSÃO ARITIMÉTICA:');
+        
+        document.write('<p>(js_num <b>-</b> 20) <b>==</b> 0 <b>?</b> "SIM" <b>:</b> "NÃO" - Resposta => ');
+            ((js_num - 20) == 0) ? document.write('<b>SIM</b> + js_num') : document.write('<b>NÃO</b>');
+    </script>
+</body>
+
+</html>

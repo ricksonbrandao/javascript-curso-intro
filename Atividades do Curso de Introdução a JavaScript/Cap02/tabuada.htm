@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabuada</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h3>Tabuada</h3>
+
+    <!--Linha de Comentário HTML: Formulário de Entrada de Dados-->
+    <form name="formTabuada" action="" method="post">
+        Digite o valor para Tabuada: <input type="text" name="f_valor" size="4" maxlength="2">
+        <p></p>
+        <input type="button" name="btn_calcular" value="Calcular" onclick="calculo()">
+        <input type="reset" name="btn_limpar" value="Limpar">
+    </form>
+    <!--Linha de Comentário HTML: início da Estrutura do JavaScript-->
+    <script language="JavaScript">
+        /*  Objetivo: Criar uma tabuada, onde o usuário insira o valor da tabuada
+            -   Objetivos/Métodos utilizados:
+            Entrada: document.form (entrada de dados via formulário)
+            Saída: document.write (saída através do condicional while)
+        */
+        function calculo() {
+            var js_contador = 1;
+            var js_valor;
+
+            js_valor = parseInt(document.formTabuada.f_valor.value);
+            document.write('<p>Tabuada do ' + js_valor);
+
+            while (js_contador <= 10) {
+                document.write('<p>' + js_valor + 'X' + js_contador + ' = ' + js_valor * js_contador);
+                js_contador += 1;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
